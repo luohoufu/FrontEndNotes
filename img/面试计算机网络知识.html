@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.jianshu.com/p/7deb521aba1e -->
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript" src="./面试计算机网络知识_files/1255494d3a"></script><script src="./面试计算机网络知识_files/nr-1026.min.js.下载"></script><script src="./面试计算机网络知识_files/push.js.下载"></script><script async="" src="./面试计算机网络知识_files/analytics.js.下载"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":0,"applicationTime":109,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="1. 基础知识 1.1 3种常见的计算机体系结构划分 OSI分层（7层）：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TCP/IP分层（4层）：网络接口层、网际层、运输层、应用层。五层协议（5层）：物理层、数据链路层、网络层、运输层、应用层。 每一层的作用如下： 物理层：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个传输数据的...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/7deb521aba1e">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/5844514">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="计算机网络面试知识点总结" property="twitter:title">
+  <meta content="1. 基础知识 1.1 3种常见的计算机体系结构划分 OSI分层（7层）：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TCP/IP分层（4层）：网络接口层、网际层、运输层、应用层。五层协议（5层）：物理层、数据链路层、网络层、运输层、应用层。 每一层的作用如下： 物理层：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个传输数据的物理媒体。物理层的任务就是透明地传送比特流。 数据链路层：数据链路层在不可靠的物理介质上提供可靠的传输。该层的作用包括：物理地址寻址、数据的成帧、流量控制、数据的检错、重发等。 网络层：网络层负责对子..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/7deb521aba1e" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="计算机网络面试知识点总结">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/7deb521aba1e">
+  <meta property="og:description" content="1. 基础知识 1.1 3种常见的计算机体系结构划分 OSI分层（7层）：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。TCP/IP分层（4层）：网络接口层、网际层、运输层、应用层...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/5844514">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/5844514">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+  <title>计算机网络面试知识点总结 - 简书</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ATU7nSTRUoox/rRWW1kpQjuaFiutKFpaaamJbTjNAlPwu4tV1dhaUbFIjd93LYzlMEptIB/AhYMWyIcXE5MXfw==">
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="./面试计算机网络知识_files/web-afdb3305962abdc90e45.css">
+  
+  <link rel="stylesheet" media="all" href="./面试计算机网络知识_files/entry-afdb3305962abdc90e45.css">
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-102eb808e418f59bfed2fc083b775207.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-9a0e20fa5637c781c5ffcc45e96b000a.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-cd6fe1b7a3ff8db8264e45c210d3e488.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/114-8cdbbf3a82188ac743551ff40f62ddd7.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-b5864fe9b70ca71f4ea083f6fe54e003.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-d820a88a50af87375962e890c8223134.png" sizes="152x152">
+</head>
+
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    <a class="logo" href="http://www.jianshu.com/"><img src="./面试计算机网络知识_files/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="Logo"></a>
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      <a class="btn write-btn" target="_blank" href="http://www.jianshu.com/writer#/">
+        <i class="iconfont ic-write"></i>写文章
+</a>      <a class="btn sign-up" href="http://www.jianshu.com/sign_up">注册</a>
+      <a class="btn log-in" href="http://www.jianshu.com/sign_in">登录</a>
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div class="style-mode"><a class="style-mode-btn"><i class="iconfont ic-navigation-mode"></i></a> <div class="popover-modal" style="left: 0px; display: none;"><div class="meta"><i class="iconfont ic-navigation-night"></i><span>夜间模式</span></div> <div class="switch day-night-group"><a class="switch-btn">开</a> <a class="switch-btn active">关</a></div> <hr> <div class="switch font-family-group"><a class="switch-btn font-song">宋体</a> <a class="switch-btn font-hei active">黑体</a></div> <div class="switch"><a class="switch-btn active">简</a> <a class="switch-btn">繁</a></div></div></div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li class="">
+              <a href="http://www.jianshu.com/">
+                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+</a>            </li>
+            <li class="">
+              <a class="app-download-btn" href="http://www.jianshu.com/apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
+            </li>
+          <li class="search">
+            <form target="_blank" action="http://www.jianshu.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+              <input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input">
+              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+              <!-- <div id="navbar-trending-search"></div> -->
+</form>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="note">
+  <div class="post">
+    <div class="article">
+        <h1 class="title">计算机网络面试知识点总结</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="http://www.jianshu.com/u/ccb6e3e26ec3">
+            <img src="./面试计算机网络知识_files/c35f117acb79" alt="144">
+</a>          <div class="info">
+            <span class="tag">作者</span>
+            <span class="name"><a href="http://www.jianshu.com/u/ccb6e3e26ec3">Mr希灵</a></span>
+            <!-- 关注用户按钮 -->
+            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="最后编辑于 2016.09.23 15:32">2016.09.17 22:54*</span>
+              <span class="wordage">字数 10826</span>
+            <span class="views-count">阅读 402</span><span class="comments-count">评论 1</span><span class="likes-count">喜欢 16</span></div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+        <!-- -->
+
+        <!-- 文章内容 -->
+        <div class="show-content">
+          <h2>1. 基础知识</h2>
+<h3>1.1 3种常见的计算机体系结构划分</h3>
+<p>OSI分层（7层）：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。<br>TCP/IP分层（4层）：网络接口层、网际层、运输层、应用层。<br>五层协议（5层）：物理层、数据链路层、网络层、运输层、应用层。</p>
+<div class="image-package">
+<img src="./面试计算机网络知识_files/53611-6372b2b829bf2820.png" data-original-src="http://upload-images.jianshu.io/upload_images/53611-6372b2b829bf2820.png?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption"></div>
+</div>
+<p>每一层的作用如下：</p>
+<ul>
+<li>物理层：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个传输数据的物理媒体。物理层的任务就是<strong>透明地传送比特流</strong>。</li>
+<li>数据链路层：数据链路层在不可靠的物理介质上提供可靠的传输。该层的作用包括：物理地址寻址、数据的成帧、流量控制、数据的检错、重发等。</li>
+<li>网络层：网络层负责对子网间的数据包进行路由选择。此外，网络层还可以实现拥塞控制、网际互连等功能。</li>
+<li>传输层：构的最高层，直接<strong>为用户的应用进程提供服务</strong>。</li>
+<li>运输层的任务是<strong>负责向两个主机中进程之间的通信提供服务</strong>。由于一个主机可同时运行多个进程，因此运输层具有复用和分用的功能。复用是指多个应用层进程可同时使用运输层的服务，分用是指运输层把收到的信息分别交付给应用层中的相应进程。</li>
+<li>应用层：为操作系统或网络应用程序提供访问网络服务的接口。</li>
+</ul>
+<h3>1.2 常见的网络协议</h3>
+<p>网络层</p>
+<ul>
+<li>IP协议：网际协议</li>
+<li>ICMP协议：Internet控制报文协议</li>
+<li>ARP协议:地址解析协议</li>
+<li>RARP协议：逆地址解析协议</li>
+</ul>
+<p>传输层</p>
+<ul>
+<li>UDP协议：用户数据报协议</li>
+<li>TCP协议：传输控制协议</li>
+</ul>
+<p>应用层</p>
+<ul>
+<li>FTP：文件传送协议</li>
+<li>Telenet：远程登录协议</li>
+<li>DNS：域名解析协议</li>
+<li>POP3：邮局协议</li>
+<li>HTTP协议</li>
+<li>SMTP：简单邮件传送协议</li>
+<li>SNMP：简单网络管理协议</li>
+<li>TFTP：简单文件传送协议</li>
+</ul>
+<h2>2. 网际协议IP</h2>
+<p>IP协议的特点</p>
+<ul>
+<li>
+<strong>不可靠</strong>：并不保证IP数据报能成功地到达目的地。如果发生某种错误，如某个路由器暂时用完了缓冲区，IP有一个简单的错误处理算法：丢弃该数据报，然后发送ICMP消息报给信源端。任何可靠性必须由上层提供（如TCP）。</li>
+<li>
+<strong>无连接</strong>：IP并不维护任何关于后续数据报的状态消息，每个连接都是独立的。这也说明，IP数据报可以不按发送顺序接收。</li>
+</ul>
+<h3>2.1 IP首部</h3>
+<p>普通的IP首部长20个字节（不包含选项字段），包含协议版本号、首部长度、总长度、唯一标识、TTL、首部检验和、源IP地址和目的IP地址。<br></p><div class="image-package">
+<img src="./面试计算机网络知识_files/53611-aaa5ffa98abeb59d.jpg" data-original-src="http://upload-images.jianshu.io/upload_images/53611-aaa5ffa98abeb59d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption"></div>
+</div>
+<ul>
+<li>通过首部长度和总长度字段就可以知道IP数据报中数据内容的起始位置和长度。</li>
+<li>TTL生存时间字段设置了数据报可以经过的最多路由器数。初始值由源主机设置，一旦经过一个处理它的路由器，其值就减一；当该字段的值为0时，数据报就被丢弃。</li>
+<li>首部检验和字段是根据IP首部计算的检验和码（ICMP、UDP、TCP检验和同时覆盖了首部和数据部分）。</li>
+<li>如果长度超过了MTU，则要进行分片，根据IP头部的格式，有一个16位的标识，分片的时候会把这个标识复制到所有的分片中去，也就是说同一个IP的分片，他们的标识是一样的；然后3bit标志中有一位是表示是否最后一片，除了最后一片为0，其它片这个标识位都为1；修改IP的长度为分片中实际数据的长度；片偏移量是该片偏移原始数据的位置。 接收端根据 标识，是否为最后一片，各个片的长度，偏移量就可以把分片的包重新组装起来。</li>
+</ul>
+<h3>2.2 IP地址</h3>
+<p>IP地址一般有网络号和主机号组成（D类和E类无此分法）。网络号标志主机（或路由器）所连接到的网络，主机号则标志该网络下的主机或路由器。</p>
+<p>由于一个路由器至少应当连接到两个网络（这样它才能将IP数据报从一个网络转发到另一个网络），因此一个路由器至少应当有两个不同的IP地址。路由器只根据目的站的IP地址的网络号进行路由选择。</p>
+<div class="image-package">
+<img src="./面试计算机网络知识_files/53611-7532225bfcde2721.png" data-original-src="http://upload-images.jianshu.io/upload_images/53611-7532225bfcde2721.png?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption"></div>
+</div>
+<p>上图中的A类、B类、C类地址都是单播地址（一对一通信），是最常用的。网络号字段的最前面有1-4位的类别位。其中有两个特殊的IP地址，<strong>主机号全为0的IP地址代表网络地址，主机号全为1的IP地址为广播地址。当向某个网络的广播地址发送消息时，该网络内的所有主机都能收到该广播消息。</strong></p>
+<p>A类地址：以0开头，第一个字节范围：0~127；<br>B类地址：以10开头，第一个字节范围：128~191；<br>C类地址：以110开头，第一个字节范围：192~223；<br>D类地址：以1110开头，第一个字节范围为224~239；</p>
+<p>3个特殊的IP地址</p>
+<ul>
+<li>
+<strong>255.255.255.255</strong><br>该IP地址指的是受限的广播地址。受限广播地址与一般广播地址（直接广播地址）的区别在于，受限广播地址之只能用于本地网络，路由器不会转发以受限广播地址为目的地址的分组；一般广播地址既可在本地广播，也可跨网段广播。例如：主机192.168.1.1/30上的直接广播数据包后，另外一个网段192.168.1.5/30也能收到该数据报；若发送受限广播数据报，则不能收到。</li>
+<li>
+<strong>0.0.0.0</strong><br>常用于寻找自己的IP地址，例如在我们的RARP，BOOTP和DHCP协议中，若某个未知IP地址的无盘机想要知道自己的IP地址，它就以255.255.255.255为目的地址，向本地范围（具体而言是被各个路由器屏蔽的范围内）的服务器发送IP请求分组。</li>
+<li>
+<strong>127.0.0.1</strong><br>127.0.0.0/8被用作回环地址，回环地址表示本机的地址，常用于对本机的测试，用的最多的是127.0.0.1。</li>
+</ul>
+<h3>2.3 划分子网</h3>
+<p>划分子网的方法是从主机号借用若干个位作为子网号subnet-id，而主机号host-id 也就相应减少了若干个位。于是两级IP地址在本单位内部就变为三级IP地址：网络号、子网号和主机号。</p>
+<p>IP地址 ::= {&lt;网络号&gt;, &lt;子网号&gt;, &lt;主机号&gt;} </p>
+<p>子网对外部路由器来说隐藏了内部网络组织的细节，在外部看来，不同子网的主机仍属于同一个网络。</p>
+<p>凡是从其他网络发送给本单位某个主机的IP数据报，仍然是根据IP数据报的目的网络号net-id，先找到连接在本单位网络上的路由器。然后此路由器在收到 IP 数据报后，再按目的网络号 net-id 和子网号 subnet-id 找到目的子网。最后就将 IP 数据报直接交付目的主机。</p>
+<p>如何正确地区分子网号和主机号是一个问题，这可以通过<strong>子网掩码</strong>来确定。将<strong>网络号和子网号全设为1</strong>的IP地址为子网掩码。给定IP地址和子网掩码以后，主机就可以确定IP数据报的目的地是本子网的主机，本网络中其他子网的主机，还是其他网络的主机。</p>
+<h3>2.4 ARP协议与RARP协议</h3>
+<p>RAP为IP地址到对应硬件地址之间提供动态映射；RARP则相反。RAP高效运行的关键是由于每个主机上都有一个RAP高速缓存，来存放最近Internet地址到硬件地址之间的映射记录。</p>
+<p>ARP协议的工作原理</p>
+<ol>
+<li>首先，每个主机都会在自己的ARP缓冲区中建立一个ARP列表，以表示IP地址和MAC地址之间的对应关系。</li>
+<li>当源主机要发送数据时，首先检查ARP列表中是否有对应IP地址的目的主机 MAC地址，如果有，则直接发送数据，如果没有，就向本网段的所有主机发送ARP数据包，该数据包包括的内容有源主机IP地址、源主机MAC地址、目的主机的IP地址。</li>
+<li>当本网络的所有主机收到该ARP数据包时，首先检查数据包中的IP地址是否是自己的IP地址，如果不是，则忽略该数据包，如果是，则首先从数据包中取出源主机的IP和MAC地址写入到ARP列表中，如果已经存在，则覆盖，然后将自己的MAC 地址写入ARP响应包中，告诉源主机自己是它想要找的MAC地址。</li>
+<li>源主机收到ARP响应包后。将目的主机的IP和MAC地址写入ARP列表，并利用此信息发送数据。如果源主机一直没有收到 ARP响应数据包，表示ARP查询失败。</li>
+</ol>
+<h3>2.5 ICMP（Internet控制报文协议）</h3>
+<p>ICMP是IP层的一个组成部分，它传递差错报文以及其他需要注意的信息。ICMP报文是在IP数据报内部（IP首部+ICMP报文）被传输的。ICMP报文由类型字段、代码字段、检验和和其他字节组成，前两个字段决定了ICMP报文的类型。</p>
+<p><strong>ICMP地址掩码请求</strong>，用于无盘系统在引导过程中获取自己自己的子网掩码。该ICMP报文的类型字段为17或18，代码字段为0，并返回32位子网掩码。</p>
+<p><strong>ICMP端口不可达差错</strong>，如果收到一份UDP数据报而目的端口与某个正在使用的进程不相符，那么UDP返回一个ICMP不可达报文。ICMP报文必须包括生成差错报文的数据报IP首部，还必须至少包括跟在该IP首部后面的前8个字节。</p>
+<h3>2.6 ping程序</h3>
+<p>ping程序的目的是为了测试另一台主机是否可达。该程序发送一份ICMP回显请求报文给主机，并等待返回ICMP回显应答。它只利用ICMP回显请求和回显应答报文，而不经过传输层。</p>
+<p>ping 127.0.0.1环回地址时，如果不能ping通说明当前机器的TCP/IP协议栈有问题，127本身是一个虚接口，任何时候都是直接上交到内核中处理的。</p>
+<p>ping 192.168.1.X 本机的以太网地址，则是测试本机的网络适配器(就是网卡啦)，一般是以太网驱动程序。<br>ping这两个地址时你会发现，但使用wireshark抓包时，是没有ICMP的回显请求发出的，这说明这两个ping程序是不会发送到网络中的（只在局域网中）。</p>
+<p>ping 同一网段中的网络地址，不通则说明网络线路出现了故障，如果网络中还存在路由器，则应该先ping路由器在本网络的地址，不通则是本机和路由器之间的线路有问题。通了，则再ping路由器所在目标计算机网络所在网段的端口IP地址，不通则说明了路由器出现了故障，通了就再ping目标主机的IP地址。</p>
+<p>如果ping www.baidu.com等网络地址ping不通时，则说明本机的DNS服务器设置错误。</p>
+<h2>3. TCP协议</h2>
+<h3>3.1 TCP服务的特点</h3>
+<p>TCP提供一种<strong>面向连接的、可靠的字节流服务</strong>。面向连接意味着应用程序在使用TCP协议之前，必须先建立TCP连接。在传送数据完毕后，必须释放已经建立的TCP连接。TCP通过以下方式来提供可靠性：</p>
+<ul>
+<li>应用数据被分割成TCP认为最适合发送的数据块。</li>
+<li>超时重传。当TCP发出一个段后，它启动一个定时器，等待目的端确认收到这个报文段。如果不能及时收到确认，将重发这个报文段。</li>
+<li>当TCP收到发自TCP连接另一端的数据后，他将发送一个确认。该确认通常将推迟几分之一秒。</li>
+<li>TCP将保持他首部和数据的检验和。</li>
+<li>由于IP数据报的到达可能会失序，因此TCP报文段的到达也可能失序。如有必要，TCP将对收到的数据进行重新排序，并以正确的顺序交付给应用层。</li>
+<li>既然IP数据报会发生重复，TCP的接收端必须丢弃重复的数据。</li>
+<li>流量控制。防止较快主机致使较慢主机的缓冲区溢出。</li>
+</ul>
+<h3>3.2 TCP的首部</h3>
+<div class="image-package">
+<img src="./面试计算机网络知识_files/53611-da2d1badf7d86d0f.png" data-original-src="http://upload-images.jianshu.io/upload_images/53611-da2d1badf7d86d0f.png?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption"></div>
+</div>
+<p>TCP虽然是面向字节流的，但TCP传送的数据单元却是报文段。一个TCP报文段分为首部和数据两部分，而TCP的全部功能都体现在它首部中各字段的作用。因此，只有弄清TCP首部各字段的作用才能掌握TCP的工作原理。TCP报文首部固定部分各字段的意义如下：</p>
+<ol>
+<li>
+<p><strong>源端口和目的端口</strong><br>各占两字节，分别写入源端口号和目的端口号。TCP的分用也是通过端口实现的。</p>
+</li>
+<li>
+<p><strong>报文段序号</strong><br>占4字节。在一个TCP连接中传送的字节流中的每一个字节都按顺序编号。整个要传送的字节流的起始序号必须在连接建立时设置，首部中的序号字段值则是指本报文所发送的数据的第一个字节的序号。</p>
+</li>
+<li>
+<p><strong>确认号</strong><br>期望收到对方下一个报文段的第一个数据字节的序号。若确认号为N，则表明到序号N-1为止的所有数据都已正确收到。</p>
+</li>
+<li>
+<p><strong>数据偏移</strong><br>指出TCP报文段的数据起始处距离TCP报文段的起始处有多远，实际上指出了TCP报文段的首部长度。</p>
+</li>
+<li>
+<p><strong>6个控制位</strong><br>确认ACK：TCP规定，在连接建立后所有传送的报文段都必须把ACK置1。<br>复位RST：当RST=1时，表明TCP连接中出现严重错误，必须释放连接，然后再重新建立运输连接。<br>同步SYN：在连接建立时用来同步序号。当SYN=1而ACK=0时，表明这是一个连接请求报文段。对方若同意建立连接，则应在响应的报文段中使用SYN=1和ACK=1.<br>终止FIN：用来释放一个连接。当FIN=1时，表明此报文段的发送方的数据已发送完毕，并要求释放运输连接。</p>
+</li>
+<li>
+<p><strong>窗口</strong><br>窗口字段明确指出了现在允许对方发送的数据量，该值经常在动态变化着。例如，设确认号是701，窗口字段是1000。这就表明从701算起，发送此报文段的一方还有接收1000个字节数据的接收缓存空间。</p>
+</li>
+</ol>
+<h3>3.3 TCP连接的建立与终止过程</h3>
+<div class="image-package">
+<img src="./面试计算机网络知识_files/53611-a0756c435d1df0ef.jpg" data-original-src="http://upload-images.jianshu.io/upload_images/53611-a0756c435d1df0ef.jpg?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption"></div>
+</div>
+<p><strong>三次握手</strong><br>第一次握手：客户端发送syn包(syn=x)到服务器，并进入SYN_SEND状态，等待服务器确认；<br>第二次握手：服务器收到syn包，必须确认客户的SYN（ack=x+1），同时自己也发送一个SYN包（syn=y），即SYN+ACK包，此时服务器进入SYN_RECV状态；<br>第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=y+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。<br>握手过程中传送的包里不包含数据，三次握手完毕后，客户端与服务器才正式开始传送数据。理想状态下，TCP连接一旦建立，在通信双方中的任何一方主动关闭连接之前，TCP 连接都将被一直保持下去。</p>
+<p><strong>四次握手</strong><br>与建立连接的“三次握手”类似，断开一个TCP连接则需要“四次握手”。<br>第一次挥手：主动关闭方发送一个FIN，用来关闭主动方到被动关闭方的数据传送，也就是主动关闭方告诉被动关闭方：我已经不会再给你发数据了(当然，在fin包之前发送出去的数据，如果没有收到对应的ack确认报文，主动关闭方依然会重发这些数据)，但是，此时主动关闭方还可以接受数据。<br>第二次挥手：被动关闭方收到FIN包后，发送一个ACK给对方，确认序号为收到序号+1。<br>第三次挥手：被动关闭方发送一个FIN，用来关闭被动关闭方到主动关闭方的数据传送，也就是告诉主动关闭方，我的数据也发送完了，不会再给你发数据了。（与SYN相同，一个FIN占用一个序号）。<br>第四次挥手：主动关闭方收到FIN后，发送一个ACK给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。</p>
+<p><strong>TCP的半关闭</strong><br>TCP提供了连接的一端在结束它的发送后还能接收来自另一端数据的能力，这就是半关闭。为了使用这一特性，编程接口必须为应用程序提供一中方式来说明“我们已经完成了数据传送，因此发送一个文件结束（FIN）给另一端，但我还想接收另一端的数据，直到它给我发送文件结束FIN”。</p>
+<p><strong>2MSL等待状态</strong><br>TIME_WAIT状态也称为2MSL等待状态。每个具体TCP实现必须选择一个报文段最大生存时间MSL，它是任何报文段被丢弃前在网络内的最长时间（RFC指出其为2min，实现中常用值还有30s和1min）。当TCP执行一个主动关闭，并发回最后一个ACK，该连接必须在TIME_WAIT状态停留的2倍的MSL；这样可让TCP再次发送最后的ACK以防这个ACK丢失（另一方超时并重发最后的FIN）。</p>
+<h3>3.4 使用UDP和TCP的场景</h3>
+<p>UDP的典型应用：实时性，不需要重传机制，局域网（本身网络稳定性高）</p>
+<ul>
+<li>UDP适合于这样的进程：需要简单的请求-响应通信，而较少考虑流量控制和差错控制。对于需要传送成块数据的进程（如FTP）则不适合使用UDP。</li>
+<li>UDP适合于具有内部流量控制和差错控制机制的进程，如简单文件传输协议TFTP。</li>
+<li>对多播来说，UDP是一个合适的传输协议。</li>
+<li>UDP常用于交互实时应用，以避免接收报文之间的不一致延时。</li>
+<li>UDP可用于管理进程，如SNMP。</li>
+</ul>
+<p><strong>TCP对应的协议</strong>：</p>
+<ol>
+<li>FTP：定义了文件传输协议，使用21端口。常说某某计算机开了FTP服务便是启动了文件传输服务。下载文件，上传主页，都要用到FTP服务。</li>
+<li>Telnet：它是一种用于远程登陆的端口，用户可以以自己的身份远程连接到计算机上，通过这种端口可以提供一种基于DOS模式下的通信服务。如以前的BBS是-纯字符界面的，支持BBS的服务器将23端口打开，对外提供服务。</li>
+<li>SMTP：定义了简单邮件传送协议，现在很多邮件服务器都用的是这个协议，用于发送邮件。如常见的免费邮件服务中用的就是这个邮件服务端口，所以在电子邮件设置-中常看到有这么SMTP端口设置这个栏，服务器开放的是25号端口。</li>
+<li>POP3：它是和SMTP对应，POP3用于接收邮件。通常情况下，POP3协议所用的是110端口。也是说，只要你有相应的使用POP3协议的程序（例如Fo-xmail或Outlook），就可以不以Web方式登陆进邮箱界面，直接用邮件程序就可以收到邮件（如是163邮箱就没有必要先进入网易网站，再进入自己的邮-箱来收信）。</li>
+<li>HTTP协议：是从Web服务器传输超文本到本地浏览器的传送协议。</li>
+</ol>
+<p><strong>UDP对应的协议</strong>：</p>
+<ol>
+<li>DNS：用于域名解析服务，将域名地址转换为IP地址。DNS用的是53号端口。<br><strong>DNS工作原理</strong>：当DNS客户机需要在程序中使用名称时，它会查询DNS服务器来解析该名称。客户机发送的每条查询信息包括三条信息：包括：指定的DNS域名，指定的查询类型，DNS域名的指定类别。该应用一般不直接为用户使用，而是为其他应用服务，如HTTP，SMTP等在其中需要完成主机名到IP地址的转换。</li>
+<li>SNMP：简单网络管理协议，使用161号端口，是用来管理网络设备的。由于网络设备很多，无连接的服务就体现出其优势。</li>
+<li>TFTP(Trival File Transfer Protocal)，简单文件传输协议，该协议在熟知端口69上使用UDP服务。</li>
+</ol>
+<h2>4. 超文本传送协议HTTP</h2>
+<p>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。HTTP协议的主要特点可概括如下：</p>
+<ul>
+<li>支持客户/服务器模式。</li>
+<li>简单快速：客户向服务器请求服务时，只需传送请求方法和路径。请求方法常用的有GET、HEAD、POST。每种方法规定了客户与服务器联系的类型不同。由于HTTP协议简单，使得HTTP服务器的程序规模小，因而通信速度很快。</li>
+<li>灵活：HTTP允许传输任意类型的数据对象。正在传输的类型由Content-Type加以标记。</li>
+<li>无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。</li>
+<li>无状态：HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</li>
+</ul>
+<h3>4.1 浏览网页的过程</h3>
+<p>浏览网页的过程其实就是浏览器作为一个浏览的“客户端”，向服务器端发送了 一次请求，把服务器端的文件“抓”到本地，再进行解释、展现。</p>
+<ul>
+<li>使用统一资源定位符URL来标志万维网上的各种文档，并使每一个文档在整个因特网的范围内具有唯一的标识符URL。</li>
+<li>通过超文本传送协议HTTP来实现万维网上各种连接，使用TCP连接进行可靠的传送。</li>
+<li>使用超文本标记语言HTML使得网页设计者可以很方便地用链接从本页面的某处链接到任意网页，并在自己主机屏幕上显示。</li>
+</ul>
+<h3>4.2 统一资源定位符URL</h3>
+<p>URL是用来表示从因特网上得到的资源位置和访问这些资源的方法。URL给资源的位置提供一种抽象的识别方法，并用这种方法给资源定位。只要能够对资源定位，系统就可以对资源进行各种操作，如存取、更新、替换和查找其属性。URL相当于一个文件名在网络范围的扩展。因此，URL是与因特网相连的机器上的任何可访问对象的指针。由于访问不同对象使用的协议不同，URL还能之处读取某个对象时所使用的协议。URL的一般形式为：</p>
+<pre class="hljs xml"><code class="xml"> <span class="hljs-tag">&lt;<span class="hljs-name">协议</span>&gt;</span>://<span class="hljs-tag">&lt;<span class="hljs-name">主机</span>&gt;</span>:<span class="hljs-tag">&lt;<span class="hljs-name">端口</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">路径</span>&gt;</span></code></pre>
+<p>协议是指用哪种协议获取该万维网文档，如http，ftp；主机是指该网络文档所在主机的域名；端口和路径有时可以省略。对万维网的网点访问使用HTTP协议，HTTP的默认端口号是80，通常可省略。若在省略文件的路径，则URL就指到因特网上的某个主页。如： www.baidu.com。</p>
+<h3>4.3 HTTP请求报文</h3>
+<p>HTTP规定在HTTP客户与HTTP服务器之间的每次交互，都由一个ASCII码串构成的请求和一个“MIME-like”的响应组成，HTTP报文通常都使用TCP连接传送。HTTP有两类报文：请求报文（从客户向服务器发送请求报文）和响应报文（从服务器到客户的回答）。HTTP请求报文和响应报文都是由三部分组成，两种报文格式的区别就是开始行不同。</p>
+<ol>
+<li>
+<strong>开始行</strong> 用于区分是请求报文还是响应报文。开始行在两种报文中分别叫<strong>请求行</strong>和<strong>状态行</strong>。</li>
+<li>
+<strong>首部行</strong> 用来说明浏览器或报文主题的一些信息。</li>
+<li>
+<strong>实体主体</strong> 在请求报文中一般不用该字段，而在响应报文中也可能没有该字段。</li>
+</ol>
+<p>请求行只有三个内容，即<strong>方法、请求资源URL和HTTP的版本</strong>。下表给出了请求报文中常用的几种方法。<br>GET：请求读取由URL所标志的信息。<br>POST：给服务器添加信息（如注释）。<br>HEAD：请求获取由Request-URI所标识的资源的响应消息报头。<br>PUT：在给定的URL下存储一个文档。<br>DELETE：删除给定的URL所标志的资源。</p>
+<p>GET方法，在浏览器的地址栏中输入网址的方式访问网页时，浏览器采用GET方法向服务器获取资源。POST方法要求被请求服务器接受附在请求后面的数据，常用于提交表单。POST与GET的区别如下：</p>
+<ul>
+<li>Get是从服务器上获取数据，Post是向服务器传送数据。</li>
+<li>Get是把参数数据队列加到提交表单的Action属性所指向的URL中，值和表单内各个字段一一对应，在URL中可以看到。</li>
+<li>Get传送的数据量小，不能大于2KB；post传送的数据量较大，一般被默认为不受限制。</li>
+<li>根据HTTP规范，GET用于信息获取，而且应该是安全的和幂等的。<ul>
+<li>所谓安全的意味着该操作用于获取信息而非修改信息。换句话说，GET 请求一般不应产生副作用。就是说，它仅仅是获取资源信息，就像数据库查询一样，不会修改，增加数据，不会影响资源的状态。</li>
+<li>幂等的意味着对同一URL的多个请求应该返回同样的结果。</li>
+</ul>
+</li>
+</ul>
+<pre class="hljs awk"><code class="awk">GET http:<span class="hljs-regexp">//</span>www.bilibili.com<span class="hljs-regexp">/video/</span>douga.html  HTTP<span class="hljs-regexp">/1.1</span></code></pre>
+<p>下面是一个请求报文的例子<br></p><div class="image-package">
+<img src="./面试计算机网络知识_files/53611-ec8d7daf1793749a.png" data-original-src="http://upload-images.jianshu.io/upload_images/53611-ec8d7daf1793749a.png?imageMogr2/auto-orient/strip%7CimageView2/2" style="cursor: zoom-in;"><br><div class="image-caption">请求报文</div>
+</div>
+<h3>HTTP响应报文</h3>
+<p>在接收和解释请求消息后，服务器返回一个HTTP响应消息。HTTP响应也是由三个部分组成，分别是：状态行、消息报头、响应正文。状态行格式如下：</p>
+<pre class="hljs abnf"><code class="abnf">HTTP-Version Status-Code Reason-Phrase <span class="hljs-keyword">CRLF</span></code></pre>
+<p>其中，HTTP-Version表示服务器HTTP协议的版本；Status-Code表示服务器发回的响应状态代码；Reason-Phrase表示状态代码的文本描述。</p>
+<p>状态代码有三位数字组成，第一个数字定义了响应的类别，且有五种可能取值：<br>1xx：指示信息--表示请求已接收，继续处理<br>2xx：成功--表示请求已被成功接收、理解、接受<br>3xx：重定向--要完成请求必须进行更进一步的操作<br>4xx：客户端错误--请求有语法错误或请求无法实现<br>5xx：服务器端错误--服务器未能实现合法的请求</p>
+<p>常见状态代码、状态描述、说明：</p>
+<pre class="hljs basic"><code class="basic"><span class="hljs-symbol">200 </span>OK      //客户端请求成功
+<span class="hljs-symbol">400 </span>Bad Request  //客户端请求有语法错误，不能被服务器所理解
+<span class="hljs-symbol">401 </span>Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用 
+<span class="hljs-symbol">403 </span>Forbidden  //服务器收到请求，但是拒绝提供服务
+<span class="hljs-symbol">404 </span><span class="hljs-keyword">Not</span> Found  //请求资源不存在，eg：输入了错误的URL
+<span class="hljs-symbol">500 </span>Internal Server <span class="hljs-keyword">Error</span> //服务器发生不可预期的错误
+<span class="hljs-symbol">503 </span>Server Unavailable  //服务器当前不能处理客户端的请求，一段时间后可能恢复正常</code></pre>
+<h2>5. DNS域名系统</h2>
+<p>DNS是一中用于TCP/IP应用程序的分布式数据库，它提供域名到IP地址的转换。举例来说，如果你要访问域名math.stackexchange.com，首先要通过DNS查出它的IP地址是151.101.129.69 。</p>
+<h3>5.1 因特网的域名结构</h3>
+<p>因特网在命名时采用的是层次树状结构的命名方法。任何一个连接在因特网上的主机或路由器，都有一个唯一的层次结构的名字，即域名(domain name)。每一个域名都是有标号(label)序列组成，而各标号之间用点(小数点)隔开。如mail.cctv.com，这是中央电视台用于手法电子邮件的计算机的域名，它由三个标号组成，其中标号com是顶级域名，标号cctv是二级域名，标号mail是三级域名。</p>
+<h3>5.2 域名服务器</h3>
+<p>如果采用上述的树状结构，每一个节点都采用一个域名服务器，这样会使得域名服务器的数量太多，使域名服务器系统的运行效率降低。所以在DNS中，采用划分区的方法来解决。</p>
+<p>一个服务器所负责管辖(或有权限)的范围叫做区(zone)。各单位根据具体情况来划分自己管辖范围的区。但在一个区中的所有节点必须是能够连通的。每一个区设置相应的权限域名服务器，用来保存该区中的所有主机到域名IP地址的映射。总之，DNS服务器的管辖范围不是以“域”为单位，而是以“区”为单位。区是DNS服务器实际管辖的范围。区 &lt;= 域。</p>
+<p>因特网上的DNS服务器也是按照层次安排的。每一个域名服务器只对域名体系中的一部分进行管辖。根据域名服务器所起的作用，可以把域名服务器划分为下面四种不同的类型。</p>
+<ul>
+<li>根域名服务器：最高层次的，也是最重要的域名服务器。所有的根域名服务器都知道所有的顶级域名服务器的域名和IP地址。不管是哪一个本地域名服务器，若要对因特网上任何一个域名进行解析，只要自己无法解析，就首先求助根域名服务器。假定所有的根域名服务器都瘫痪了，那么整个DNS系统就无法工作。很多情况下，根域名服务器并不直接把待查询的域名直接解析出IP地址，而是告诉本地域名服务器下一步应当找哪一个顶级域名服务器进行查询。</li>
+<li>顶级域名服务器：负责管理在该顶级域名服务器注册的二级域名。</li>
+<li>权限域名服务器：负责一个“区”的域名服务器。</li>
+<li>本地域名服务器：本地服务器不属于下图的域名服务器的层次结构，但是它对域名系统非常重要。当一个主机发出DNS查询请求时，这个查询请求报文就发送给本地域名服务器。</li>
+</ul>
+<h3>5.3 域名的解析过程</h3>
+<p>主机向本地域名服务器的查询一般都是采用递归查询。所谓递归查询就是：如果主机所询问的本地域名服务器不知道被查询的域名的IP地址，那么本地域名服务器就以DNS客户的身份，向其它根域名服务器继续发出查询请求报文(即替主机继续查询)，而不是让主机自己进行下一步查询。因此，递归查询返回的查询结果或者是所要查询的IP地址，或者是报错，表示无法查询到所需的IP地址。</p>
+<p>本地域名服务器向根域名服务器的查询的迭代查询。迭代查询的特点：当根域名服务器收到本地域名服务器发出的迭代查询请求报文时，要么给出所要查询的IP地址，要么告诉本地服务器：“你下一步应当向哪一个域名服务器进行查询”。然后让本地服务器进行后续的查询。根域名服务器通常是把自己知道的顶级域名服务器的IP地址告诉本地域名服务器，让本地域名服务器再向顶级域名服务器查询。顶级域名服务器在收到本地域名服务器的查询请求后，要么给出所要查询的IP地址，要么告诉本地服务器下一步应当向哪一个权限域名服务器进行查询。最后，知道了所要解析的IP地址或报错，然后把这个结果返回给发起查询的主机。</p>
+<p>下面举一个例子演示整个查询过程：<br>假定域名为m.xyz.com的主机想知道另一个主机y.abc.com的IP地址。例如，主机m.xyz.com打算发送邮件给y.abc.com。这时就必须知道主机y.abc.com的IP地址。下面是上图a的几个查询步骤：</p>
+<ol>
+<li>主机m.abc.com先向本地服务器dns.xyz.com进行递归查询。</li>
+<li>本地服务器采用迭代查询。它先向一个根域名服务器查询。</li>
+<li>根域名服务器告诉本地服务器，下一次应查询的顶级域名服务器dns.com的IP地址。</li>
+<li>本地域名服务器向顶级域名服务器dns.com进行查询。</li>
+<li>顶级域名服务器dns.com告诉本地域名服务器，下一步应查询的权限服务器dns.abc.com的IP地址。</li>
+<li>本地域名服务器向权限域名服务器dns.abc.com进行查询。</li>
+<li>权限域名服务器dns.abc.com告诉本地域名服务器，所查询的主机的IP地址。</li>
+<li>本地域名服务器最后把查询结果告诉m.xyz.com。</li>
+</ol>
+<p>整个查询过程共用到了8个UDP报文。</p>
+<p>为了提高DNS查询效率，并减轻服务器的负荷和减少因特网上的DNS查询报文数量，在域名服务器中广泛使用了高速缓存，用来存放最近查询过的域名以及从何处获得域名映射信息的记录。例如，在上面的查询过程中，如果在m.xyz.com的主机上不久前已经有用户查询过y.abc.com的IP地址，那么本地域名服务器就不必向根域名服务器重新查询y.abc.com的IP地址，而是直接把告诉缓存中存放的上次查询结果(即y.abc.com的IP地址)告诉用户。</p>
+<h2>6. 面试题精选</h2>
+<h3>例题1：TCP和UDP有什么区别？</h3>
+<p>TCP是传输控制协议，提供的是面向连接、可靠的字节流服务。当客户和服务器批次交换数据前，必须建立TCP连接之后才能传输数据。TCP提供超时重传、丢弃重复数据、流量控制等功能，保证数据能从一端传到另一端。</p>
+<p>UDP是用户数据报协议，是一个简单的面向数据报的运输层协议。UDP不提供可靠性，不保证数据能够到达目的地。由于UDP在传输数据前不用在客户和服务器之间建立连接，且没有超时重传等机制，故而传输速度很快。</p>
+<h3>例题2：TCP的可靠性如何保证？</h3>
+<p>TCP的可靠性是通过顺序编号和确认（ACK）来实现的。</p>
+<h3>例题3：在浏览器中输入www.baidu.com后执行的全部过程</h3>
+<ol>
+<li>客户端浏览器通过DNS解析到www.baidu.com的IP地址220.181.27.48，通过这个IP地址找到客户端到服务器的路径。客户端浏览器发起一个HTTP会话到220.161.27.48，然后通过TCP进行封装数据包，输入到网络层。</li>
+<li>在客户端的传输层，把HTTP会话请求分成报文段，添加源和目的端口，如服务器使用80端口监听客户端的请求，客户端由系统随机选择一个端口如5000，与服务器进行交换，服务器把相应的请求返回给客户端的5000端口。然后使用IP层的IP地址查找目的端。</li>
+<li>客户端的网络层不用关系应用层或者传输层的东西，主要做的是通过查找路由表确定如何到达服务器，期间可能经过多个路由器，这些都是由路由器来完成的工作，我不作过多的描述，无非就是通过查找路由表决定通过那个路径到达服务器。</li>
+<li>客户端的链路层，包通过链路层发送到路由器，通过邻居协议查找给定IP地址的MAC地址，然后发送ARP请求查找目的地址，如果得到回应后就可以使用ARP的请求应答交换的IP数据包现在就可以传输了，然后发送IP数据包到达服务器的地址。</li>
+</ol>
+<h3>例题4：牛客网由于访问客户量的增长,原来的服务器不足以维持请求,经常发生宕机的突发情况,因此为了解决这个问题,CEO决定新增加几台服务器,那么问题是这些接入WEB服务器第一次被访问到时，不同协议的发生顺序是下面中的（ARP -&gt; DNS -&gt; HTTP）。</h3>
+<p>解析：当你给WEB服务器接上网线的时候，它会自动发送一条ARP信息，使得接入网关能找的到它；网关上会形成一条MAC地址到IP地址的映射记录。如用户在浏览器中输入域名，如本地DNS缓存中没有，必然会进行一次DNS查询，以确定该域名的IP地址。获得DNS对应的IP地址以后，使用HTTP协议访问web服务器（不考虑TCP三次握手建立连接的阶段）。 </p>
+<h3>例题5：将一个C类网络划分为3个子网，每个子网最少要容纳55台主机，使用的子网掩码是？（2017乐视实习生）</h3>
+<p>答：255.255.255.192</p>
+<h3>例题5：IP路由表包括哪几项内容？</h3>
+<p>IP路由表通常包括三项内容，他们是<strong>子网掩码、目的网络地址、到目的网络路径上“下一个”路由器的地址</strong>。</p>
+
+        </div>
+        <!--  -->
+
+        <div class="show-foot">
+          <a class="notebook" href="http://www.jianshu.com/nb/3823228">
+            <i class="iconfont ic-search-notebook"></i> <span>软件技术学习</span>
+</a>          <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+            © 著作权归作者所有
+          </div>
+          <div class="modal-wrap" data-report-note="">
+            <a id="report-modal">举报文章</a>
+          </div>
+        </div>
+    </div>
+
+    <!-- 文章底部作者信息 -->
+        <div class="follow-detail">
+          <div class="info">
+            <a class="avatar" href="http://www.jianshu.com/u/ccb6e3e26ec3">
+              <img src="./面试计算机网络知识_files/c35f117acb79" alt="144">
+</a>            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <a class="title" href="http://www.jianshu.com/u/ccb6e3e26ec3">Mr希灵</a>
+          <p>写了 159833 字，被 129 人关注，获得了 210 个喜欢</p></div>
+            <div class="signature">
+              <span>愤怒的面包，落草的火子</span>
+            </div>
+        </div>
+
+      <div class="support-author"><p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p> <div class="btn btn-pay">赞赏支持</div> <!----> <!----> <!----></div>
+
+    <div class="meta-bottom">
+      <div class="like"><div class="btn like-group"><div class="btn-like"><a href="http://www.jianshu.com/sign_in"><i class="iconfont ic-like"></i>喜欢</a></div> <div class="modal-wrap"><a>16</a></div></div> <!----></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+          <i class="iconfont ic-wechat"></i>
+        </a>
+        <a class="share-circle" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/5844514/weibo/image_9355048bae4f.jpg&#39;, &#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
+          <i class="iconfont ic-weibo"></i>
+        </a>
+          <a class="share-circle" data-toggle="tooltip" href="http://cwb.assets.jianshu.io/notes/images/5844514/weibo/image_9355048bae4f.jpg" target="_blank" data-original-title="下载长微博图片">
+            <i class="iconfont ic-picture"></i>
+          </a>
+        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="
+          &lt;ul class=&quot;share-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-zone&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-twitter&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-facebook&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-google&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;计算机网络面试知识点总结&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-douban&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        " data-original-title="" title="">更多分享</a>
+      </div>
+    </div>
+    <div><div id="comment-list" class="comment-list"><div><form class="new-comment"><a class="avatar"><img src="./面试计算机网络知识_files/avatar_default-78d4d1f68984cd6d4379508dd94b4210.png"></a> <div class="sign-container"><a href="http://www.jianshu.com/sign_in" class="btn btn-sign">登录</a> <span>后发表评论</span></div></form></div> <div id="normal-comment-list" class="normal-comment-list"><div><div><div class="top"><span>1条评论</span> <a class="author-only">只看作者</a> <a class="close-btn" style="display: none;">关闭评论</a> <div class="pull-right"><a class="active">按喜欢排序</a><a class="">按时间正序</a><a class="">按时间倒序</a></div></div></div> <!----> <!----> <div id="comment-4761895" class="comment"><div><div class="author"><a href="http://www.jianshu.com/u/873f2c2e8c6a" target="_blank" class="avatar"><img src="./面试计算机网络知识_files/9933b9943a50.jpg"></a> <div class="info"><a href="http://www.jianshu.com/u/873f2c2e8c6a" target="_blank" class="name">我来简单说几句</a> <!----> <div class="meta"><span>2楼 · 2016.10.12 00:28</span></div></div></div> <div class="comment-wrap"><p>很用心</p> <div class="tool-group"><a><i class="iconfont ic-zan"></i> <span>赞</span></a> <a><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div> <div class="comments-placeholder" style="display: none;"><div class="author"><div class="avatar"></div> <div class="info"><div class="name"></div> <div class="meta"></div></div></div> <div class="text"></div> <div class="text animation-delay"></div> <div class="tool-group"><i class="iconfont ic-zan-active"></i><div class="zan"></div> <i class="iconfont ic-list-comments"></i><div class="zan"></div></div></div></div></div> <!----> <!----></div></div>
+  </div>
+
+  <div class="side-tool"><ul><li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="回到顶部"><a href="http://www.jianshu.com/p/7deb521aba1e#" class="function-button"><i class="iconfont ic-backtop"></i></a></li> <!----> <!----> <li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="分享文章"><a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="&lt;ul class=&#39;share-list&#39;&gt;
+                &lt;li&gt;&lt;a class=&quot;weixin-share&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-weixin&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到微信&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/5844514/weibo/image_9355048bae4f.jpg&#39;, &#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-weibo&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到微博&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://cwb.assets.jianshu.io/notes/images/5844514/weibo/image_9355048bae4f.jpg&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-picture&quot;&gt;&lt;/i&gt;&lt;span&gt;下载长微博图片&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-zone&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 Mr希灵 的文章《计算机网络面试知识点总结》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-twitter&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-facebook&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-google&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/7deb521aba1e?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;计算机网络面试知识点总结&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-douban&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;" data-original-title="" title="" class="function-button"><i class="iconfont ic-share"></i></a> <!----></li></ul></div>
+</div>
+<div class="note-bottom"><div class="main"><div class="title">被以下专题收入，发现更多相似内容</div> <!----> <div class="include-collection"><!----> <a href="http://www.jianshu.com/c/NEt52a?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./面试计算机网络知识_files/computer_guy.jpg"><div class="name">程序员</div></a><a href="http://www.jianshu.com/c/66702f785589?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./面试计算机网络知识_files/android.graphics.Bitmap_42704c70.jpeg"><div class="name">计算机期末复习</div></a><a href="http://www.jianshu.com/c/261e57f3ffaa?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./面试计算机网络知识_files/android.graphics.Bitmap_208ae23.jpeg"><div class="name">计算机网络面试</div></a><a href="http://www.jianshu.com/c/7862965dd7f8?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./面试计算机网络知识_files/android.graphics.Bitmap_d2ea82b.jpeg"><div class="name">更重要</div></a></div> <!----></div> <!----> <!----></div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"windows","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"uuid":"b745c5ca-8112-447b-a313-93beacca371f"},"note":{"id":5844514,"slug":"7deb521aba1e","user_id":53611,"notebook_id":3823228,"commentable":true,"likes_count":16,"views_count":402,"public_wordage":10826,"comments_count":1,"author":{"total_wordage":159833,"followers_count":129,"total_likes_count":210}}}</script>
+    
+    <script src="./面试计算机网络知识_files/babel-polyfill-afdb3305962abdc90e45.js.下载"></script>
+    <script src="./面试计算机网络知识_files/web-base-afdb3305962abdc90e45.js.下载"></script>
+<script src="./面试计算机网络知识_files/web-afdb3305962abdc90e45.js.下载"></script>
+    
+    <script src="./面试计算机网络知识_files/entry-afdb3305962abdc90e45.js.下载"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35169517-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div style="display:none">
+  <script src="./面试计算机网络知识_files/z_stat.php" language="JavaScript"></script><script src="./面试计算机网络知识_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1258679142" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+  
+
+<!----><!----></body></html>
