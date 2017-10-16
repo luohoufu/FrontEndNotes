@@ -44,7 +44,7 @@ for(var 数组元素 of 数组)
 2. var removed = myFish.splice(0, 2, "parrot", "anemone", "blue");
 3. **删除数目设为0**，则可直接在**start**处开始插入元素，start之后的元素包括start处的元素后移
 
-### concat （合并两个数组）
+### concat （合并两个数组  返回新数组）
 1. var new_array = old_array.concat()数组*或非数组值
 2. concat不修改调用他的对象和参数中数组的值，直接拷贝到新数组中。**（对象引用：浅拷贝；字符串和数字：原始值）**
 3. 类数组可使用，但结果不同.返回的对象是数组，而不是对象。 **无length属性也可使用，且不会添加length属性 **
@@ -370,7 +370,7 @@ hh
 * concat
 * slice
 * some
-* forEach
+* forEach 可以改变而已
 * every
 * filter
 * map（被废弃）

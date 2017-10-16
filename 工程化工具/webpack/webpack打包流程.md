@@ -176,3 +176,19 @@ Compilation.prototype.seal = function seal(callback) {
 模块进行封装，添加到sourcemap，对应assets，包含单个文件名和文件代码，保存在complition对象上保存为assets属性
 
 ![](https://img.alicdn.com/tps/TB1cz5.NXXXXXc7XpXXXXXXXXXX-959-807.png?_=5852987)
+
+## loader
+
+输入文件，输出文件，支持loader串型使用，例如：style!css!less!./foo.less
+
+## plugin
+
+loader只能处理单一文件的输入输出
+
+## entry
+
+ Dss
+
+## 参考
+
+[webpack原理](http://www.thkdog.com/html5/2015/05/08/webpack.html)

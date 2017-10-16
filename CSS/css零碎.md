@@ -95,8 +95,8 @@ border内侧添加空白
 
 ##14.margin合并问题
 * 块级元素的垂直相邻外边距会合并，
-* 行内元素不占上下外边距，左右外边距不合并
-* 浮动元素的外边距也**不会合并**
+* 行内元素不占上下外边距，**左右外边距不合并**
+* 浮动元素的外边距也**不会合并** BFC
 
 ##15.设置placeholder 的样式
 **placeholder放在input中即可**
@@ -122,7 +122,7 @@ border内侧添加空白
 	::-moz-selection{ background:#DDDDDE; }
 	::-webkit-selection { background:#DDDDDE; }
 
-##18.取出按钮input外边的框
+##18.去除按钮input外边的框
 
 	ouline：none；
 ## 19.height:100%无效
@@ -138,3 +138,20 @@ border内侧添加空白
   ```
 
 
+## css可继承的属性
+
+内联元素可继承：
+
+letter-spacing、word-spacing、white-space、line-height、
+
+color、font、font-family、font-size、font-style、font-variant、font-weight、
+
+text-decoration、text-transform、direction。
+
+终端块状元素可继承：text-indent和text-align。
+
+列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
+
+表格元素可继承：border-collapse。
+
+css的继承和改写   继承是可以改写的

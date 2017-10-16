@@ -41,6 +41,47 @@ Line-box:
 
 默认值是base-line，很少有字体的ascender和descender的比例是一比一的，
 
+## line-height
 
+设置为百分比或者具体的值的是计算出来的值，不会随着font-size做相应的比例缩放，
+
+设置为normal或者1.4会根据具体的font-size计算出来
+
+
+
+## 关于line-height
+
+```
+    <div class="before">jkjkjk</div>
+        <span>abcdefgefg</span>
+    <div class="after">kkkkk</div>
+```
+
+```
+    .before {
+    	height: 20px;
+    	background-color: red;
+    	color: white;
+    }
+    span {
+        line-height: 10px;
+        font-size: 20px;
+        color:white;
+        background-color: black;
+    }
+    .after {
+    	height: 20px;
+    	background-color: blue;
+    	color: white;
+    }
+```
+
+span不会被遮挡，上面的div被遮挡，下面的div的背景被遮挡，但是字体不被遮挡
+
+line-height决定行内元素的高度，但是height由font-size决定，但是line-height由最小字觉得，例如chrome最小为12px；
+
+background 渲染颜色是height的高度 height 等于 font-size的高度加上上边下边距 
+
+但是实际的高度由font-size决定
 
 [深入理解 CSS：字体度量、line-height 和 vertical-align](https://zhuanlan.zhihu.com/p/25808995?group_id=825729897170345984)

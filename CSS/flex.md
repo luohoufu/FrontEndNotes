@@ -1,4 +1,29 @@
+[TOC]
+
+
+
+flex-direction：column row  -reverse
+
+flex-wrap：wrap no-wrap wrap-reverse
+
+flex-flow
+
+justify-content：flex-start end center space-between around大一倍
+
+align-items：start end center stretch（默认值，未设置高度或者设置为auto，将占满整个容器） baseline    竖直方向的对齐方式
+
+align-content。 多根轴线的对齐方式，如果只有一根轴线，不起作用
+
+
+
+
+
+order顺序 flex         grow - shrink - basis      align-self 自己的堆砌方式
+
+
+
 #一、基础
+
 	.box{
 	 display:flex
 	}
@@ -26,7 +51,6 @@ webkit内核浏览器必须加上-webkit前缀
 - wrap 换行
 - wrap-reverse 换行，第一行在下方
 ##flex-flow（flex-directon和flex-wrap简写）
-- 
 ##justify-content（在主轴上的对其方式）
 - flex-start 左对齐
 - flex-end 右对齐

@@ -18,4 +18,5 @@
 
 ## chunk&&module
 
-每个资源都是一个module，几个module被打包为一个chunk
+**每个资源都是一个module，几个module被打包为一个chunk**
+
